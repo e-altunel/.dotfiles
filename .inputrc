@@ -1,0 +1,2 @@
+TAB: menu-complete # Cycle through completions
+"\b":backward-kill-word # Delete the word before the cursor
