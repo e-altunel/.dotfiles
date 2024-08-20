@@ -112,3 +112,4 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
+eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/agnoster.omp.json)"
