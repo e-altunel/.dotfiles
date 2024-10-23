@@ -50,8 +50,6 @@
   color: rgba(255, 255, 255, 0.3) !important;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
-
 *:not(.codicon) {
-  font-family: "Fira Code", monospace !important;
+  font-family: "FiraCode Nerd Font Mono", monospace !important;
 }
