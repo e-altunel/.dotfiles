@@ -1,0 +1,9 @@
+\.git
+css
+\.gitignore
+\.gitmodules
+\.config\firefox
+\.config/auto_theme_scripts
+\.config/kitty/kitty_base.conf
+\.config/kitty/kitty_light.conf
+\.config/kitty/kitty_night.conf
