@@ -16,7 +16,7 @@ HAS_WIDECHARS="false"
 alias vi="nvim"
 alias vim="nvim"
 alias pacman="sudo pacman"
-
+alias sudo="sudo -E"
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -121,3 +121,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH=/opt/cuda/bin:$PATH
+export LD_LIBRARY_PATH=/opt/cuda/lib64:$LD_LIBRARY_PATH

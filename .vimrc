@@ -1,14 +1,22 @@
 syntax enable
-highlight CursorLineNr term=bold cterm=bold ctermfg=202 guifg=#e9630a
-highlight LineNr ctermfg=DarkGray guifg=#818182
-highlight CursorLine cterm=NONE ctermbg=NONE guibg=NONE
-
 set nu rnu
 set cursorline
 
 " Set the cursor shape to a underline
 set guicursor=
 
-:set tabstop=2
-:set shiftwidth=2
-:set expandtab
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+call plug#begin()
+
+Plug 'vimpostor/vim-lumen'
+Plug 'ayu-theme/ayu-vim'
+
+call plug#end()
+
+set termguicolors
+au User LumenLight let ayucolor="light" | colorscheme ayu
+au User LumenDark let ayucolor="mirage" | colorscheme ayu
+colorscheme ayu
