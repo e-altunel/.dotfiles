@@ -111,6 +111,11 @@ source $ZSH/oh-my-zsh.sh
 alias vi=nvim
 alias vim=nvim
 alias v=nvim
+
+export ANDROID_HOME=/opt/android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # shellcheck shell=bash
 
 # =============================================================================
