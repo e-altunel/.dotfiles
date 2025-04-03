@@ -112,6 +112,7 @@ alias vi=nvim
 alias vim=nvim
 alias v=nvim
 alias copy="xclip -selection clipboard"
+alias yay="yay --cleanmenu=false --diffmenu=false --askremovemake=false -q"
 
 export ANDROID_HOME=/opt/android-sdk
 export PATH=$PATH:$ANDROID_HOME/tools
