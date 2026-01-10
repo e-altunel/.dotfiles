@@ -106,9 +106,7 @@ if [[ ! -d $ZSH_CACHE_DIR ]]; then
   mkdir $ZSH_CACHE_DIR
 fi
 
-if [ -f /etc/zsh/zshenv ]; then
-	source $ZSH/oh-my-zsh.sh
-fi
+source $ZSH/oh-my-zsh.sh
 
 if [ -s "/usr/share/nvm/init-nvm.sh" ] ; then
 	source /usr/share/nvm/init-nvm.sh
