@@ -154,3 +154,9 @@ if command -v zoxide >/dev/null 2>&1; then
 fi
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+if command -v fastfetch >/dev/null 2>&1; then
+  fastfetch
+elif command -v neofetch >/dev/null 2>&1; then
+  neofetch
+fi
