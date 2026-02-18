@@ -133,6 +133,7 @@ if command -v eza >/dev/null 2>&1; then
 	alias ls="eza --color=auto --group-directories-first --icons=auto"
 	alias tree="eza --tree --color=auto --icons=auto --group-directories-first"
 fi
+alias ll="ls -alh"
 
 if [ -d "/opt/android-sdk" ] ; then
 	export ANDROID_HOME=/opt/android-sdk
