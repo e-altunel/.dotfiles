@@ -154,10 +154,16 @@ if command -v zoxide >/dev/null 2>&1; then
 	eval "$(zoxide init zsh --cmd cd)"
 fi
 
+if command -v bat >/dev/null 2>&1; then
+	alias cat="bat -p"
+fi
+
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
 
-if command -v fastfetch >/dev/null 2>&1; then
-  fastfetch
-elif command -v neofetch >/dev/null 2>&1; then
-  neofetch
+if [ "$TERM_PROGRAM" != "vscode" ]; then
+	if command -v fastfetch >/dev/null 2>&1; then
+		fastfetch
+	elif command -v neofetch >/dev/null 2>&1; then
+		neofetch
+	fi
 fi
